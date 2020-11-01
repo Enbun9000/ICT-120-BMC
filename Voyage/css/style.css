@@ -1,0 +1,47 @@
+#logo {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    height: 100px;
+    width: 200px;
+}
+h1 {
+    /*position: absolute;*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*top: 10px;*/
+}
+
+.btns {
+    height: 30px;
+    width: 100px;
+}
+
+.nav {
+    background-image: URL("../img/Rome-by-night.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 1133px;
+    align-items: center;
+}
+.org {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+.dataZone {
+    margin: auto;
+    width: 1133px;
+}
+.dataTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
