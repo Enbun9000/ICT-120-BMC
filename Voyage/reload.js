@@ -1,3 +1,4 @@
+txtHotelData00.value = 'alpha'
 
     // Load image tags with the name in the input field
     document.querySelectorAll(".actimg").forEach(img => {
