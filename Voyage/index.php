@@ -45,7 +45,7 @@
                     <p>City: <input type="text" name="txtHotelData[03]" id="txtHotelData03"></p>
                     <p>Téléphone: <input type="text" name="txtHotelData[04]" id="txtHotelData04"></p>
                     <p>Email: <input type="email" name="txtHotelData[05]" id="txtHotelData05"></p>
-                    <img src="img/hotels/hotel-none.png" id="imgHotel" >
+                    <img src="" id="imgHotel" >
                     <!--Chambre:<input type="text" name="txtRoom[00]" id="txtRoom00">Etage:<input type="text" name="txtFloor[00]" id="txtFloor00">Max personnes:<input type="text" name="txtCapacity[00]" id="txtCapacity00">Occupant1:<input type="text" name="txtOcc1[00]" id="txtOcc100">Occupant2:<input type="text" name="txtOcc2[00]" id="txtOcc200">Occupant3:<input type="text" name="txtOcc3[00]" id="txtOcc300">Occupant4:<input type="text" name="txtOcc4[00]" id="txtOcc400"><br>-->
                 </div>
 

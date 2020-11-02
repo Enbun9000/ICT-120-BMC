@@ -35,17 +35,35 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 
-    document.getElementById("txtHotelData00").addEventListener("focusout", function () {
-        if (txtHotelData00.value === "Alpha" || txtHotelData00.value === "alpha") imgHotel.src = 'img/hotels/hotel-alpha.jpg';
-        else if(txtHotelData00.value === "Beta" || txtHotelData00.value === "beta") imgHotel.src = 'img/hotels/hotel-beta.jpg';
-        else if (txtHotelData00.value === "Gamma" || txtHotelData00.value === "gamma") imgHotel.src = 'img/hotels/hotel-gamma.jpg';
-        else if(txtHotelData00.value === "Delta" || txtHotelData00.value === "delta") imgHotel.src = 'img/hotels/hotel-delta.jpg';
-        else imgHotel.src = 'img/hotels/hotel-none.jpg';
+    document.getElementById("txtHotelData00").addEventListener("blur", function () {
+        switch (txtHotelData00.value) {
+            case "Alpha":
+            case "alpha":
+                imgHotel.src = 'img/hotels/hotel-alpha.jpg';
+                break;
+            case "Beta":
+            case "beta":
+                imgHotel.src = 'img/hotels/hotel-beta.jpg';
+                break;
+            case "Gamma":
+            case "gamma":
+                imgHotel.src = 'img/hotels/hotel-gamma.jpg';
+                break;
+            case "Delta":
+            case "delta":
+                imgHotel.src = 'img/hotels/hotel-delta.jpg';
+                break;
+            default:
+                imgHotel.src = 'img/hotels/hotel-none.png';
+                break;
+        }
+
     });
 
-    document.getElementById("txtHotelData02").addEventListener("focusout", function () {
+    document.getElementById("txtHotelData02").addEventListener("blur", function () {
         for(var i = 0;i<npa.length; i++) {
-            if (npa[i] === parseInt(txtHotelData02.value)) txtHotelData03.value = villes[i];
+            if (parseInt(txtHotelData02.value) === npa[i]) txtHotelData03.value = villes[i];
+
         }
     })
 });
